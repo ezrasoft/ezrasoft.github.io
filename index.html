@@ -28,6 +28,24 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+  .card {
+  position: relative;
+}
+
+.price-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+  background-color: #ffc107;
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0 0 0 5px;
+}
+
+  </style>
 </head>
 
 <body>
@@ -243,8 +261,13 @@
         </h2>
       </div>
       <div class="service_container">
-        <div class="box">
+        <div class="box card">
           <img src="images/s-1.jpg" alt="">
+          <div class="price-tag">$19.99</div>
+  <div class="card-body">
+    <h5 class="card-title">Product Name</h5>
+    <p class="card-text">Product Description</p>
+  </div>
           <h6 class="visible_heading">
             CROSSFIT TRAINING
           </h6>
