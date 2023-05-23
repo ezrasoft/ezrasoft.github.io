@@ -1,3 +1,3 @@
 <?php
-    $database = new SQLite3('database.db');
+    $database = new SQLite3('datamine.db');
 ?>
