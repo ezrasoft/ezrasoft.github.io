@@ -21,6 +21,28 @@
   </style>
 </head>
 <body oncontextmenu="return false;">
-<iframe src="https://bhavaszambia.com"></iframe>
+
+  <div id="iframeContainer">
+  <iframe id="hashedIframe" width="100%" height="400" frameborder="0"></iframe>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // The original URL you want to embed in the iframe
+  const originalUrl = "https://bhavaszambia.com";
+
+  // Hash the URL (replace this with your actual hashing logic)
+  const hashedUrl = hashFunction(originalUrl);
+
+  // Set the hashed URL as the src of the iframe
+  const iframe = document.getElementById("hashedIframe");
+  iframe.src = hashedUrl;
+});
+
+function hashFunction(url) {
+  // Replace this with your actual hashing logic
+  // For example, you can use libraries like CryptoJS for hashing
+  return "https://example.com/hashed/" + hashValue;
+}
+</script>
 </body>
 </html>
