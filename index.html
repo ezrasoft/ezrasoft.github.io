@@ -39,9 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function hashFunction(url) {
-  // Replace this with your actual hashing logic
-  // For example, you can use libraries like CryptoJS for hashing
-  return "https://example.com/hashed/" + hashValue;
+  // A simple hashing logic, just appending some string to the URL
+  return "https://example.com/hashed/" + encodeURIComponent(url);
 }
 </script>
 </body>
