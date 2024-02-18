@@ -23,12 +23,12 @@
 <body oncontextmenu="return false;">
 
   <div id="iframeContainer">
-  <iframe src="https://www.plasticsinfo.co.za/contact-us/" title="description"></iframe>
-</div>
+  <iframe id="hashedIframe" title="Website"></iframe>
+</div> 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   // The original URL you want to embed in the iframe
-  const originalUrl = "https://bhavaszambia.com";
+  const originalUrl = "https://www.plasticsinfo.co.za/contact-us/";
 
   // Hash the URL (replace this with your actual hashing logic)
   const hashedUrl = hashFunction(originalUrl);
